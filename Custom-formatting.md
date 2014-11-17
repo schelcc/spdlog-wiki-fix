@@ -1,6 +1,7 @@
-spdlog supports custom formatting of log messsages.
-It offers 2 ways of doing it:
-* Use ```logger.set_pattern(std::string pattern_string)``` (recommended)
+spdlog's default logging format is of the form ```2014-31-10 23:46:59.678] [info] [mylogger] Some message```
+
+There are 2 ways to customize log format:
+* Use ```logger.set_pattern(std::string pattern_string)``` (*recommended*)
 
 * Implement custom formatter that implements the [formatter](https://github.com/gabime/spdlog/blob/master/include/spdlog/formatter.h) interface
 and call ```set_formatter(std::share_ptr<custom_formatter>)``` 
