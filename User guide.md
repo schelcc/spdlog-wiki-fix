@@ -1,4 +1,3 @@
-# spdlog User guide
 ## Quick start:
 ```c++
 
