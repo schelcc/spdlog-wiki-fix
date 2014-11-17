@@ -1,6 +1,6 @@
 spdlog supports custom formatting of log messsages.
 It offers 2 ways of doing it:
-* Use the logger.set_pattern(pattern_string) function (recommended)
+* Use the logger.set_pattern(std::string pattern_string) function (recommended)
 * Implement custom formatter that implements the [formatter](https://github.com/gabime/spdlog/blob/master/include/spdlog/formatter.h)interface
 
 ## Customizing log format using set_pattern:
