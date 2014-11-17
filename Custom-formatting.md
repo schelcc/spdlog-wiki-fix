@@ -45,6 +45,7 @@ Pattern flags are in the form of %[flag] and resembles [strftime] (http://www.cp
 |%R|24-hour HH:MM time, equivalent to %H:%M|"23:55"|
 |%T or %X|ISO 8601 time format (HH:MM:SS), equivalent to %H:%M:%S|"23:55:59"|
 |%z|ISO 8601 offset from UTC in timezone ([+/-]HH:MM)|"+02:00"|
+|%%|The % sign|"%"|
 |%+|The default, full format including logger name and level: [%Y-%m-%d %H:%M:%S.%e] [%n] [%l] %v|"[2014-31-10 23:46:59.678] [info] [mylogger] Some message"
 
 
