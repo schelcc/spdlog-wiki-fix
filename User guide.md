@@ -1,7 +1,7 @@
 ### Quick start:
 
 ####Install: 
-Headers only - just add the [spdlog](../spdlog/include) include folder to the compiler's include path 
+Headers only - just add the [spdlog](https://github.com/gabime/spdlog/tree/master/include) include folder to the compiler's include path 
 
 ####Usage:
 ```c++
