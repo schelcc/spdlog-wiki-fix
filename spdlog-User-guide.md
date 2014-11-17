@@ -1,11 +1,7 @@
 # spdlog User guide
-
 ## Quick start:
-1. Copy include/spdlog to your build tree
-2. ```c++
-/
-// spdlog usage example
-//
+```c++
+
 #include <iostream>
 #include "spdlog/spdlog.h"
 
@@ -21,4 +17,5 @@ int main(int, char* [])
     {
         std::cout << "Log failed: " << ex.what() << std::endl;
     }
-}```
+}
+```
