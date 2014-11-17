@@ -1,4 +1,9 @@
 ### Quick start:
+
+####Install: 
+Headers only - just add the include/spdlog folder compiler's include path 
+
+####Usage:
 ```c++
 
 #include <iostream>
