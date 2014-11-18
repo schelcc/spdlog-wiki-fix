@@ -58,4 +58,3 @@ Anything that is not pattern flag will be logged as is..
 |%%|The % sign|"%"|
 |%+|spdlog's default format|"[2014-31-10 23:46:59.678] [info] [mylogger] Some message"
 
-
