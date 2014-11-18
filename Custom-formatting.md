@@ -19,9 +19,7 @@ some_logger.set_pattern(">>>>>>>>> %H:%M:%S %z %v <<<<<<<<<");
 ```
 
 ## Format strings & efficiency
-Whenever the user calls ```set_pattern("..")``` the library "compiles" the new pattern to an internal efficient representation.
-
-This way the performance stays very good even with complex patterns (no parsing of the pattern on each log write)
+Whenever the user calls ```set_pattern("..")``` the library "compiles" the new pattern to an internal efficient representation  - This way the performance stays excellent even with complex patterns (no re-parsing of the pattern on each log write to decide how to format it)
 
 ## Pattern flags:
 Pattern flags are in the form of %[flag] and resembles [strftime] (http://www.cplusplus.com/reference/ctime/strftime/) function..
