@@ -7,8 +7,8 @@ There are 2 ways to customize log format:
 * Or implement custom formatter that implements the [formatter](https://github.com/gabime/spdlog/blob/master/include/spdlog/formatter.h) interface
 and call ```set_formatter(std::make_shared<my_custom_formatter>())``` 
 
-## Customizing log format using set_pattern:
-Can be set globally to all loggers:
+## Customizing format using set_pattern:
+Format can be set globally to all loggers:
 ```
 spdlog::set_pattern("*** [%H:%M:%S %z] [thread %t] %v ***");
 ```
