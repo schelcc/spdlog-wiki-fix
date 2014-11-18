@@ -18,8 +18,14 @@ or to a specific logger object:
 some_logger.set_pattern(">>>>>>>>> %H:%M:%S %z %v <<<<<<<<<");
 ```
 
+## Format strings & efficiency
+Whenever the user does "set_pattern("..") the library "compiles" the new pattern to use, 
+so performance is stays very good even with complex patterns (no parsing of the pattern on each log write)
+
 ## Pattern flags:
-Pattern flags are in the form of %[flag] and resembles [strftime] (http://www.cplusplus.com/reference/ctime/strftime/) function
+Pattern flags are in the form of %[flag] and resembles [strftime] (http://www.cplusplus.com/reference/ctime/strftime/) function..
+Anything that is not pattern flag will be logged as is..
+
 
 
 |flag|meaning|example|
