@@ -15,7 +15,7 @@ spdlog::set_pattern("*** [%H:%M:%S %z] [thread %t] %v ***");
 ```
 or to a specific logger object:
 ```
-some_logger.set_pattern("*** [%H:%M:%S %z] [thread %t] %v ***");
+some_logger.set_pattern(">>>>>>>>> %H:%M:%S %z %v <<<<<<<<<");
 ```
 
 ## Pattern flags:
