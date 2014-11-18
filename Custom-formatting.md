@@ -39,7 +39,7 @@ Anything that is not pattern flag will be logged as is..
 |%c|Date and time representation|"Thu Aug 23 15:35:46 2014"|
 |%C|Year in 2 digits|"14"|
 |%Y|Year in 4 digits|"2014"|
-|%D or %x|Short MM/DD/YY date|"08/23/01"|
+|%D or %x|Short MM/DD/YY date|"08/23/14"|
 |%m|Month 1-12|"11"|
 |%d|Day of month 1-31|"29"|
 |%H|Hours in 24 format  0-23|"23"|
