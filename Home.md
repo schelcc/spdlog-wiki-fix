@@ -1,8 +1,7 @@
-```c++
-
-#include <iostream>
 ##Quick Start
 
+```c++
+#include <iostream>
 #include "spdlog/spdlog.h"
 
 int main(int, char* [])
