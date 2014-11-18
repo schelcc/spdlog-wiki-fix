@@ -13,7 +13,7 @@ Can be set globally to all loggers:
 ```
 spdlog::set_pattern("*** [%H:%M:%S %z] [thread %t] %v ***");
 ```
-or to customize a specific logger:
+or to a specific logger object:
 ```
 some_logger.set_pattern("*** [%H:%M:%S %z] [thread %t] %v ***");
 ```
