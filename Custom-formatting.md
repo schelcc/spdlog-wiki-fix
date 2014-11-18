@@ -1,6 +1,6 @@
 spdlog's default logging format is of the form:
 
-```[2014-31-10 23:46:59.678] [info] [mylogger] Some message```
+```[2014-31-10 23:46:59.678] [info] [my_loggername] Some message```
 
 There are 2 ways to customize log format:
 * Use ```logger.set_pattern(std::string pattern_string)``` (*recommended*)
