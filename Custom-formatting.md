@@ -19,7 +19,7 @@ some_logger.set_pattern(">>>>>>>>> %H:%M:%S %z %v <<<<<<<<<");
 ```
 
 ## Format strings & efficiency
-Whenever the user does "set_pattern("..") the library "compiles" the new pattern, 
+Whenever the user does ```set_pattern("..")``` the library "compiles" the new pattern, 
 so performance is stays very good even with complex patterns (no parsing of the pattern on each log write)
 
 ## Pattern flags:
