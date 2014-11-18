@@ -5,7 +5,7 @@ spdlog's default logging format is of the form:
 There are 2 ways to customize log format:
 * Use ```logger.set_pattern(std::string pattern_string)``` (*recommended*)
 * Or implement custom formatter that implements the [formatter](https://github.com/gabime/spdlog/blob/master/include/spdlog/formatter.h) interface
-and call ```set_formatter(std::make_shared<custom_formatter>())``` 
+and call ```set_formatter(std::make_shared<my_custom_formatter>())``` 
 
 ## Customizing log format using set_pattern:
 Can be set globally to all loggers:
