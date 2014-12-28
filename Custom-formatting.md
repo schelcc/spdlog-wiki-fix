@@ -47,7 +47,7 @@ Anything that is not pattern flag will be logged as is..
 |%M|Minutes 0-59|"59"|
 |%S|Minutes 0-59|"58"|
 |%e|Millisecond part of the current second 0-999|"678"|
-|%f|Microsecond part of the current second 0-999999|"123678"|
+|%f|Microsecond part of the current second 0-999999|"056789"|
 |%p|AM/PM|"AM"|
 |%r|12 hour clock|"02:55:02 pm"|
 |%R|24-hour HH:MM time, equivalent to %H:%M|"23:55"|
