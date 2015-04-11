@@ -18,6 +18,7 @@ To register manually created loggers(i.e. not created by the spdlog.h factory fu
 ```c++
 spdlog::register_logger(logger_shared_ptr);
 ```
+which will register ```logger_shared_ptr``` using it's name.
 
 ### Registry conflicts
 spdlog will throw a spdlog_ex on attempting to register using a name that already exists in the registy
