@@ -16,9 +16,9 @@ Normally  there is no need to register loggers as they are registered automatica
 
 To register manually created loggers(i.e. not created by the spdlog.h factory functions) use the ```"register_logger(std::shared_ptr<logger>)"``` function:
 ```c++
-spdlog::register_logger(logger_shared_ptr);
+spdlog::register_logger(some_logger);
 ```
-which will register ```logger_shared_ptr``` using it's name.
+which will register ```some_logger``` using it's name.
 
 ### Registry conflicts
 spdlog will throw a spdlog_ex on attempting to register using a name that already exists in the registy
