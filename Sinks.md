@@ -16,9 +16,9 @@ When reaching file max size it will close the file, rename it and create a new f
 
 Usage example: 
 ```c++
-auto rotating = std::make_shared<spdlog::sinks::rotating_file_sink> ("log_filename", ".log", 1024*1024, 5, false);
+auto rotating = make_shared<spdlog::sinks::rotating_file_sink_mt> ("log_filename", ".log", 1024*1024, 5, false);
 ```
-will create a sink which will keep its file to max of 1MB and max of 5 rotated files. The last param(false) indicates not to flush upon every log call (for performance reasons) but to rely on whenever the OS decides to flush to the disk. 
+will create a thread safe sink which will keep its file to max of 1MB and max of 5 rotated files. The last param(false) indicates not to flush upon every log call (for performance reasons) but to rely on whenever the OS decides to flush to the disk. 
 
 **daily_file_sink** ([sinks/file_sinks.h] (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
@@ -26,9 +26,9 @@ A file sink that will creates a new log file (with the timestamp appended to its
 
 Usage example:
 ```c++
-auto daily = std::make_shared<spdlog::sinks::daily_file_sink> ("log_filename", ".log", 14, 55);
+auto daily = make_shared<spdlog::sinks::daily_file_sink_mt> ("log_filename", ".log", 14, 55);
 ```
-will create a sink which will create a new log file each day on 14:55
+will create a thread safe sink which will create a new log file each day on 14:55.
 
 **simple_file_sink** ([sinks/file_sinks.h] (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
@@ -36,7 +36,7 @@ A simple file sink that just writes to the give log file with no restrictions.
 
 Usage example:
 ```c++
-auto simple = std::make_shared<spdlog::sinks::simple_file_sink> ("filename.log", true);
+auto simple = make_shared<spdlog::sinks::simple_file_sink_mt> ("filename.log", true);
 ```
 will create file logger to "filename.log" and auto flush set to true (flush every log call to disk)
 
