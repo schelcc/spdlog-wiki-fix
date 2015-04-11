@@ -2,6 +2,10 @@ Loggers are stored(as shared pointers) in spdlog's global registry so they can b
 
 ```c++
 spdlog::get("logger1")->info("hello");
+.. 
+.. 
+some other source file..
+..
 auto l = spdlog::get("logger2");
 l->info("hello again");
 ```
