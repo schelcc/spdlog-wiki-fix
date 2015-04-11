@@ -25,9 +25,10 @@ spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::discard_log_msg)
 async loggers are always thread safe. Moreover, they use lockfree queues to prevent locking even when multiple threads use the same logger simultaneously. 
 
 
-#### Wramup function
+#### Warm-up function
 Sometimes the user needs to do some initialization on the newly created worker thread (for example set thread affinity or priority).
-To achieve this the user can provice a callback function to the async_more call:
+
+To achieve this the user can provide a callback function or lambda to the ```set_async_mode``` call:
 
 ```c++
 spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::block_retry, []() {/* Some init code */});
