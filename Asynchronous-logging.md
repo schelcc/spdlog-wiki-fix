@@ -22,4 +22,4 @@ spdlog::set_async_mode(q_size, async_overflow_policy::discard_log_msg)
 ```
 
 #### Thread safety
-async loggers are always thread safe. Moreover, they use lockfree queues to prevent locking even when multiple threads use the same logger. 
+async loggers are always thread safe. Moreover, they use lockfree queues to prevent locking even when multiple threads use the same logger simultaneously. 
