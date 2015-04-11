@@ -21,7 +21,7 @@ spdlog::register_logger(some_logger);
 which will register ```some_logger``` using it's name.
 
 ### Registry conflicts
-spdlog will throw a spdlog_ex on attempting to register using a name that already exists in the registy
+spdlog will throw a ```sdplog::spdlog_ex``` exception  on attempting to register using a name that already exists in the registy
 
 ### Removing loggers from the registry
 The "drop()" function can be used to remove a logger from the registry.
