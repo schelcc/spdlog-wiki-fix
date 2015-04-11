@@ -2,7 +2,6 @@ Asynchronous logging works be using the spdlog::async_logger.
 
 To turn async mode on call ```spdlog::set_async_mode(q_size) //size must be power of 2``` to tell spdlog to create async loggers from now on.
 
-In async mode, spdlog will create async_loggers instead of the regular loggers.
 
 Each such logger has a queue with pre allocated slots and a worker thread.
 When the user logs a message to an async logger the following happen:
