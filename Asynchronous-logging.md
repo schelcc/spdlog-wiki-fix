@@ -1,7 +1,11 @@
 Asynchronous logging works be using the spdlog::async_logger.
 
-Upon it creation it create a queue with pre allocated slots and a worker thread.
-When the use logs a message the following happen:
+To turn async mode on call ```spdlog::set_async_mode(q_size) //size must be power of 2``` to tell spdlog to create async loggers from now on.
+
+In async mode, spdlog will create async_loggers instead of the regular loggers.
+
+Each such logger has a queue with pre allocated slots and a worker thread.
+When the user logs a message to an async logger the following happen:
 
 1. The next empty slot in the queue is used to store the log message. If the queue is full (exceeded it's max_size), the call blocks until there is room again.
 
