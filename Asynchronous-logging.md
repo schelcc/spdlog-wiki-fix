@@ -31,5 +31,5 @@ Sometimes the user needs to do some initialization on the newly created worker t
 To achieve this the user can provide a callback function or lambda to the ```set_async_mode``` call:
 
 ```c++
-spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::block_retry, []() {/* Some init code */});
+spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::block_retry, []() {/* Some init code in the worker thread*/});
 ```
