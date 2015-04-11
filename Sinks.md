@@ -1,4 +1,4 @@
-Sinks are the one that actually write the log to its target.
+Sinks are the objects that actually write the log to their target. Each sink should be responsible for only single target (e.g file, console, db)
 
 Each logger contains a vector of one or more```std::shared_ptr<sink>```. On each log call (if the log level is right) the logger will emit the log string to it's sinks which do the actual work.
 
