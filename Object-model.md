@@ -25,7 +25,8 @@ class my_sink : public sink
 ```
 
 If your sink needs to use locks for thread safety, you can inherit from [base_sink] (../tree/master/include/spdlog/sinks/base_sink.h) which will do the locking for you on each log call.
-In this case you would need to implement the protected "_sink_it" function
+In this case you will need to implement the protected "_sink_it" function.
+
 For example: 
 ```c++
 class my_threaded_sink : public base_sink < std::mutex >
