@@ -8,6 +8,13 @@ Each logger contains a vector of one or more std::shared_ptr<sink>. On each log 
 spdlog's sinks have _mt (multi threaded) or _st (single threaded) suffixes to indicate there thread safety.
 While single threaded sinks cannot be used from multiple threads simultaneously they are faster because no locking is employed.
 
+
+### Available sinks
+File sinks (defined in [sinks/file_sinks.h](../tree/master/include/spdlog/sinks/file_sinks.h):
+
+* rotating_file_sink
+* daily_file_sink 
+* simple_file_sink 
 ### Implementing your own sink
 
 A sink must implement the [sink](../tree/master/include/spdlog/sinks/sink.h) interface.
@@ -48,5 +55,3 @@ protected:
 ..
 }
 ```
-
-
