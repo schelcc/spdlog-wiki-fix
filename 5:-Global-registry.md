@@ -14,7 +14,7 @@ l->info("hello again");
 ### Registering new loggers
 Normally  there is no need to register loggers as they are registered automatically for you.
 
-The exception is manually created loggers(i.e. not created by the spdlog.h factory functions) - you will need to use the ```"register_logger(std::shared_ptr<logger>)"``` function:
+The exception is manually created loggers(i.e. not created by the spdlog.h factory functions). In this case you may use the ```"register_logger(std::shared_ptr<logger>)"``` function to register them:
 ```c++
 spdlog::register_logger(logger_shared_ptr);
 ```
