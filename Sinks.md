@@ -9,9 +9,9 @@ While single threaded sinks cannot be used from multiple threads simultaneously,
 
 
 ### Available sinks
-File sinks (defined in [sinks/file_sinks.h](https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
-**rotating_file_sink** 
+**rotating_file_sink**  (defined in [sinks/file_sinks.h] (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
+
 
 When reaching file max size it will close the file, rename it and create a new file. Both max size and max files to hold are configurable in the ctor.
 
