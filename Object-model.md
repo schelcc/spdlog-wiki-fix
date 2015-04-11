@@ -19,6 +19,7 @@ class my_sink : public sink
   void log(const details::log_msg& msg) override
   {
     // Your code here. 
+    //details::log_msg is a struct containing the log entry info like level, timestamp, thread id etc.
     // msg.formatted contains the formatted log.
     // msg.raw contains pre formatted log
     std::cout << msg.formatted.str();
