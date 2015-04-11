@@ -18,7 +18,11 @@ class my_sink : public sink
 {
   void log(const details::log_msg& msg) override
   {
-    //Your code here. 
+    // Your code here. 
+    // msg.formatted contains the formatted log.
+    // msg.raw contains pre formatted log
+    std::cout << msg.formatted.str();
+
  }
 };
 ..
