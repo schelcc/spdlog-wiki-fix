@@ -41,7 +41,7 @@ auto simple = std::make_shared<spdlog::sinks::simple_file_sink> ("filename.log",
 will create file logger to "filename.log" and auto flush set to true (flush every log call to disk)
 
 
-**stdout_sink/stderr_sink** ([sinks/stdount_sinks.h] 
+**stdout_sink/stderr_sink** ([sinks/stdout_sinks.h] 
 (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/stdout_sinks.h)):
 
 Write to standard output or error
