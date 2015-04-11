@@ -1,8 +1,12 @@
 Asynchronous logging works be using the spdlog::async_logger.
+
 Upon it creation it create a queue with pre allocated slots and a worker thread.
 When the use logs a message the following happen:
+
 1. The next empty slot in the queue is used to store the log message. If the queue is full (exceeded it's max_size), the call blocks until there is room again.
+
 2. The worker thread pops the message from the queue and log the message using the logger's sinks.
+
 3. If an exception happens in the worker thread (e.g. failed logging to file) an exception will be re-thrown when the user calls the next log message. This way the user can be notified on errors happening in the worker thread.
 
 #### Full queue policy
