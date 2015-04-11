@@ -1,5 +1,6 @@
 spdlog maintains a global (per process) registry of the created loggers.
-The main purpose is so loggers can be accessed easily from anywhere in the project without passing them around.
+
+The main purpose is that loggers can be accessed easily from anywhere in the project without passing them around.
 
 ```c++
 spdlog::get("logger1")->info("hello");
