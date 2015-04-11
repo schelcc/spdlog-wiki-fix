@@ -1,8 +1,6 @@
 Sinks are the one that actually write the log to its target.
 
-They are always of type ```std::shared_ptr<sink>``` because they are meant to be shared between loggers.
-
-Each logger contains a vector of one or more std::shared_ptr<sink>. On each log call (if the log level is right) the logger will emit the log string to it's sinks which do the actual work.
+Each logger contains a vector of one or more```std::shared_ptr<sink>```. On each log call (if the log level is right) the logger will emit the log string to it's sinks which do the actual work.
 
 
 
