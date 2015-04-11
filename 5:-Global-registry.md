@@ -13,5 +13,17 @@ l->info("hello again");
 Loggers created by spdlog:: factory functions get registered automatically using the given name.
 Manually created loggers are not registered and can be using::
 ```c++
-spdlog::register_logger(logger_shared_ptr, "logger_unique_name");
+spdlog::register_logger(logger_shared_ptr);
+```
+
+### Registry conflicts
+spdlog will throw a spdlog_ex on attempting to register using a name that already exists in the registy
+
+### Removing loggers from the registry
+The "drop()" function can be used to remove the logger from the registry.
+If no other shared_ptr pointing to the logger exists, the logger will be closed and all its resources will be freed.
+```c++
+spdlog::drop("logger_name");
+//or remove them all
+spdlog::drop_all()
 ```
