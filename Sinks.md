@@ -4,7 +4,7 @@ Each logger contains a vector of one or more```std::shared_ptr<sink>```. On each
 
 
 
-spdlog's sinks have _mt (multi threaded) or _st (single threaded) suffixes to indicate there thread safety.
+spdlog's sinks have _mt (multi threaded) or _st (single threaded) suffixes to indicate the thread safety.
 While single threaded sinks cannot be used from multiple threads simultaneously they are faster because no locking is employed.
 
 
