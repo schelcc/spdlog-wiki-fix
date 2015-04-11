@@ -1,5 +1,6 @@
-spdlog can be [tweaked](https://github.com/gabime/spdlog/blob/master/include/spdlog/tweakme.h) to improve performance even more.
-Here is an example of tweaked file which use linuxes coarse fast clock
+To squeeze every last drop of performance out of spdlog, the [tweakme.h] (https://github.com/gabime/spdlog/blob/master/include/spdlog/tweakme.h) header file can be edited.
+
+Here is an example of which use linux's coarse fast clock
 
 ```c++
 ///////////////////////////////////////////////////////////////////////////////
