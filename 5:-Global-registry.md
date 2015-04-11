@@ -10,8 +10,9 @@ auto l = spdlog::get("logger2");
 l->info("hello again");
 ```
 
-Loggers created by spdlog:: factory functions get registered automatically using the given name.
-Manually created loggers are not registered and can be using::
+### Registering new loggers
+Loggers created by spdlog factory functions get registered automatically using the given name.
+Manually created loggers are not registered and can be using:
 ```c++
 spdlog::register_logger(logger_shared_ptr);
 ```
