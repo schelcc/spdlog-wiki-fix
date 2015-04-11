@@ -18,8 +18,17 @@ User can decide what to do when the queue is full:
 * Block the call until there is more room (default behaviour)
 * Discard the message and never block - by setting the ```spdlog::async_overflow_policy```:
 ```c++
-spdlog::set_async_mode(q_size, async_overflow_policy::discard_log_msg)
+spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::discard_log_msg)
 ```
 
 #### Thread safety
 async loggers are always thread safe. Moreover, they use lockfree queues to prevent locking even when multiple threads use the same logger simultaneously. 
+
+
+#### Wramup function
+Sometimes the user needs to do some initialization on the newly created worker thread (for example set thread affinity or priority).
+To achieve this the user can provice a callback function to the async_more call:
+
+```c++
+spdlog::set_async_mode(q_size, spdlog::async_overflow_policy::block_retry, []() {/* Some init code */});
+```
