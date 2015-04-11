@@ -4,6 +4,7 @@ To turn async mode on call ```spdlog::set_async_mode(q_size) //size must be powe
 
 
 Each such logger has a queue with pre allocated slots and a worker thread.
+
 When the user logs a message to an async logger the following happen:
 
 1. The next empty slot in the queue is used to store the log message. If the queue is full (exceeded it's max_size), the call blocks until there is room again.
