@@ -21,7 +21,7 @@ auto rotating = std::make_shared<spdlog::sinks::rotating_file_sink> ("filename",
 ```
 will create a sink which will keep its file to max of 1MB and max of 5 rotated files. The last param(false) indicates not to flush upon every log call (for performance reasons) but to rely on whenever the OS decides to flush to the disk. 
 
-**daily_file_sink** 
+**daily_file_sink** (defined in [sinks/file_sinks.h] (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
 Will create a new log file each day on the specified time.
 
@@ -31,7 +31,7 @@ auto daily = std::make_shared<spdlog::sinks::daily_file_sink> ("filename", ".log
 ```
 will create a sink which will create a new log file each day on 14:55
 
-**simple_file_sink**
+**simple_file_sink** (defined in [sinks/file_sinks.h] (https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
 Just write to the give log file with no restrictions
 
