@@ -3,11 +3,7 @@ To squeeze every last drop of performance out of spdlog, the [tweakme.h] (https:
 Here is an example of which use linux's coarse fast clock
 
 ```c++
-///////////////////////////////////////////////////////////////////////////////
-// Edit this file to squeeze every last drop of performance out of spdlog.
-///////////////////////////////////////////////////////////////////////////////
-
-
+#pragma once
 ///////////////////////////////////////////////////////////////////////////////
 // Under Linux, the much faster CLOCK_REALTIME_COARSE clock can be used.
 // This clock is less accurate - can be off by dozens of millis - depending on the kernel HZ
