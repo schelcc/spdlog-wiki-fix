@@ -1,4 +1,5 @@
-Loggers are stored(as shared pointers) in spdlog's global registry so they can be accessed easily from anywhere in the project without passing them around
+spdlog maintains a global (per process) registry object for loggers.
+The main purpose is so loggers can be accessed easily from anywhere in the project without passing them around.
 
 ```c++
 spdlog::get("logger1")->info("hello");
@@ -11,8 +12,9 @@ l->info("hello again");
 ```
 
 ### Registering new loggers
-Loggers created by spdlog factory functions get registered automatically using the given name.
-Manually created loggers are not registered and can be using:
+Normally  there is no need to register loggers as they are registered automatically for you.
+
+The exception is manually created loggers(i.e. not created by the spdlog.h factory functions) - you will need to use the ```"register_logger(std::shared_ptr<logger>)"``` function:
 ```c++
 spdlog::register_logger(logger_shared_ptr);
 ```
