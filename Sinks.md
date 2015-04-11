@@ -10,14 +10,20 @@ While single threaded sinks cannot be used from multiple threads simultaneously 
 
 
 ### Available sinks
-File sinks (defined in [sinks/file_sinks.h](../tree/master/include/spdlog/sinks/file_sinks.h):
+File sinks (defined in [sinks/file_sinks.h](https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/file_sinks.h)):
 
-* rotating_file_sink
+* rotating_file_sink: limits is log file size. When reaching max size it will close the file, rename it and create a new file. Both max size and max files to hold are configurable in the ctor
+Usage example: 
+```c++
+auto rotating = std::make_shared<spdlog::sinks::rotating_file_sink> ("filename", ".log", 1024*1024, 5, false);
+```
+will create a sink which will keep its file to max of 1MB and max of 5 rotated files. The last param(false) indicates not to flush upon every log call (for performance reasons) but to rely on whenever the OS decides to flush to the disk. 
+
 * daily_file_sink 
 * simple_file_sink 
 ### Implementing your own sink
 
-A sink must implement the [sink](../tree/master/include/spdlog/sinks/sink.h) interface.
+A sink must implement the [sink](https://github.com/gabime/spdlog/tree/master/include/spdlog/sinks/sink.h) interface.
 To implement a new sink all you need to do is implement your own ```void log(const details::log_msg& msg)``` function 
 
 
