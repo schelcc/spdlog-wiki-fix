@@ -20,3 +20,6 @@ User can decide what to do when the queue is full:
 ```c++
 spdlog::set_async_mode(q_size, async_overflow_policy::discard_log_msg)
 ```
+
+#### Thread safety
+async loggers are always thread safe. More over they use lockfree queue to prevent locking even when multiple threads use the same logger. 
