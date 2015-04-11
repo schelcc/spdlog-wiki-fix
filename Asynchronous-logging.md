@@ -8,4 +8,7 @@ When the use logs a message the following happen:
 #### Full queue policy
 User can decide what to do when the queue is full:
 * Block the call until there is more room (default behaviour)
-* Discard the message and never block - by calling spdlog::set_async_mode(q_size, async_overflow_policy::discard_log_msg) before creating the loggers
+* Discard the message and never block - by setting the ```async_overflow_policy```:
+```c++
+spdlog::set_async_mode(q_size, async_overflow_policy::discard_log_msg)
+```
