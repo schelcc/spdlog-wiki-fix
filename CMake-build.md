@@ -1,6 +1,6 @@
 ### CMake
 
-Library can be built using [CMake](http://www.cmake.org/). Version of CMake must be 3.0+ and can be checked by `--version`:
+Library can be installed and examples can be built using [CMake](http://www.cmake.org/). Version of CMake must be 3.0+ and can be checked by `--version`:
 ```bash
 > cmake --version
 cmake version 3.3.1
