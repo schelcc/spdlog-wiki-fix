@@ -1,6 +1,6 @@
 Spdlog **will not** throw exceptions while logging (since version [39cdd08](https://github.com/gabime/spdlog/tree/39cdd08a5475c63959174747a140de86c24e4849)). 
 
-It will throw exception only if the initialisation of a logger or sink have failed (i.e. upon construction)
+It might throw during the construction logger or sink, because it is considered fatal.
 
 If an error happens during logging, the library will print an error message to stderr.
 To avoid flodding the screen with error messages, the rate is limited per logger to max of 1 message/minute
