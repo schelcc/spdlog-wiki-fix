@@ -1,4 +1,4 @@
-Spdlog will not throw exceptions while logging (since version 39cdd08a5475c63959174747a140de86c24e4849). 
+Spdlog will not throw exceptions while logging (since version [39cdd08](https://github.com/gabime/spdlog/tree/39cdd08a5475c63959174747a140de86c24e4849)). 
 
 It will throw exception only if the initialisation of a logger or sink have failed (i.e. upon construction)
 
