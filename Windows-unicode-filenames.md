@@ -1,7 +1,7 @@
 spdlog supports unicode filenames under windows. 
 To enable it please uncomment the 
 ```c++
-#define SPDLOG_WHCAR_FILENAMES
+#define SPDLOG_WCHAR_FILENAMES
 ```
 line in the ```tweakme.h``` file and use the SPDLOG_FILENAME_T (or L..) macro when specifying filenames:
 
