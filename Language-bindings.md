@@ -1,6 +1,6 @@
 # Language binding
 ## Python
-### Installation
+### Installation from Pypi.org
 pip install spdlog
 ### Source
 GitHub repo: [pyspdlog](https://github.com/bodgergely/pyspdlog)
