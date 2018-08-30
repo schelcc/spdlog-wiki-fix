@@ -8,6 +8,8 @@ This means that calls to functions like ```spdlog::set_level(spdlog::level::leve
 What can be done is to register the logger in both registries.
 
 ```c++
+// /!\ Disclaimer: This was not compiled but extracted from documentation and some code. /!\
+
 // mylibrary.h
 // In library, we skip the symbol exporting part
 
