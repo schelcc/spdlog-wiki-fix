@@ -8,7 +8,10 @@ This means that calls to functions like ```spdlog::set_level(spdlog::level::leve
 What can be done is to register the logger in both registries.
 
 ```c++
-// /!\ Disclaimer: This was not compiled but extracted from documentation and some code. /!\
+/*
+ * Disclaimer:
+ *   This was not compiled but extracted from documentation and some code.
+ */
 
 // mylibrary.h
 // In library, we skip the symbol exporting part
@@ -80,7 +83,9 @@ int main()
 
     spdlog::register_logger(logger);
 
-    spdlog::set_level(spdlog::level::level_enum::degug); // Now this will also affect the library logger
+    // Now this will also affect the library logger
+    spdlog::set_level(spdlog::level::level_enum::degug);
+
     library::test("Hello World!"); // Hurray !
 
     return 0;
