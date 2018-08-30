@@ -29,7 +29,9 @@ std::shared_ptr<spdlog::logger> setup_logger(std::vector<spdlog::sink_ptr> sinks
     {
         if(sinks.size() > 0)
         {
-            logger = std::make_shared<spdlog::logger>(logger_name, std::begin(sinks), std::end(sinks));
+            logger = std::make_shared<spdlog::logger>(logger_name,
+                                                      std::begin(sinks),
+                                                      std::end(sinks));
             spdlog::register_logger(logger);
         }
         else
