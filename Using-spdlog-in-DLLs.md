@@ -78,13 +78,13 @@ int main()
 
     auto logger = library::setup_logger(sinks);
 
-    spdlog::set_level(spdlog::level::level_enum::degug); // No effect for the library.
+    spdlog::set_level(spdlog::level::level_enum::debug); // No effect for the library.
     library::test("Hello World!"); // No logging
 
     spdlog::register_logger(logger);
 
     // Now this will also affect the library logger
-    spdlog::set_level(spdlog::level::level_enum::degug);
+    spdlog::set_level(spdlog::level::level_enum::debug);
 
     library::test("Hello World!"); // Hurray !
 
