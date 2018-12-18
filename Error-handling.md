@@ -24,3 +24,10 @@ This behaviour can be changed by calling ```spdlog::set_error_handler(new_handle
     });
 
 ```
+
+**The default error handler**
+
+`_default_err_handler` will use this to print error
+```c++
+    fmt::print(stderr, "[*** LOG ERROR ***] [{}] [{}] {}\n", date_buf, name(), msg);
+```
