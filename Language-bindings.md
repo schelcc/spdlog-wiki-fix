@@ -6,7 +6,7 @@ pip install spdlog
 ### Source
 GitHub repo: [pyspdlog](https://github.com/bodgergely/pyspdlog)
 ### Features
-Version 1.0.3:
+
 * Async mode support
 * ConsoleLogger
 * FileLogger
