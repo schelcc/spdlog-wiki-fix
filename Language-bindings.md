@@ -14,7 +14,7 @@ Version 1.0.3:
 * RotatingLogger
 * SyslogLogger
 * LogLevels
+* Sinks
 
 Missing:
-* Sinks
 * String formatting
