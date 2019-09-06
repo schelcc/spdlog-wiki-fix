@@ -4,7 +4,7 @@ On a reasonably sized log message (under 1000 bytes) spdlog will take to complet
 ### Installation from pypi.org
 pip install spdlog
 ### Source
-GitHub repo: [pyspdlog](https://github.com/bodgergely/pyspdlog)
+GitHub repo: [spdlog-python](https://github.com/bodgergely/spdlog-python)
 ### Features
 
 * Async mode support
