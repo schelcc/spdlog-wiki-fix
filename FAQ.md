@@ -1,0 +1,12 @@
+# FAQ
+
+**The log file remains empty . What's wrong?**
+
+For performance reasons, files are not flushed immediately. 
+Try any of the following methods:
+```c++
+my_logger->flush_on(spdlog::level::info);      // my_logger will flush when "info" or higher message is logged
+spdlog::flush_on(spdlog::level::info);         // all loggers will flush when "info" or higher message is logged on all loggers
+spdlog::flush_every(std::chrono::seconds(5));  // flush periodically every 5 seconds (caution: must be _mt logger)
+```
+See the [flush policy](https://github.com/gabime/spdlog/wiki/7.-Flush-policy) for details.
