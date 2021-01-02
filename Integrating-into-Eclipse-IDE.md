@@ -1,4 +1,4 @@
-This short guide can help you get started with integrating the C ++ **spdlog** library into the Eclipse IDE.
+This short guide can help you get started with integrating the C++ **spdlog** library into the Eclipse IDE.
 The whole configuration consists of 5 simple steps.
 
 Note: We can use git clone. Of course :)<br>
