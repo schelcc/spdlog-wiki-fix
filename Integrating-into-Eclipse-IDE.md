@@ -8,10 +8,10 @@ Note: In many cases, it is advisable to choose a parent folder named '_ThirdPart
 
 2) From the menu bar choose `Project > Properties > C/C+ Build > GCC C++ Compiler > Preprocessor`, and here you have to add a definition by clicking the Add button (define symbol `-D`) and add the following definition `SPDLOG_COMPILED_LIB`. Attention, keep the size of the letters!
 
-3) Then click `Includes` (We are still here:` Project> Properties> C / C ++ Build> GCC C ++ Compiler`) and add the path to the folder with headers for the library spdlog.
+3) Then click `Includes` (We are still here:` Project> Properties> C / C ++ Build> GCC C ++ Compiler`) and add the path to the folder with headers for the library **spdlog**.
 For example: `thirdParty/spdlog/include`
 
-4) Click on APPLY and CLOSE.
+4) Click on `apply and close`.
 
 5) Click `Project > Indexer > rebuild`
 
