@@ -1,4 +1,4 @@
-I haven't seen any json examples anywhere with spdlog so I thought I'd share how we did it. It's not hard to have human-readable and json-based machine-readable logs. I've edited this as per @gabime's response below, you don't need to use custom formatters, you can just call set_pattern(...) directly as below. 
+I haven't seen any json examples anywhere with spdlog so I thought I'd share how we did it. It's not hard to have human-readable and json-based machine-readable logs. 
 
 
 
