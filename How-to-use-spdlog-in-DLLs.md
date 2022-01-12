@@ -18,6 +18,7 @@ What can be done is to register the logger in both registries.
 
 #include <memory>
 #include <vector>
+#include <spdlog/spdlog.h>
 #include <spdlog/logger.h>
 #include <spdlog/sinks/stdout_color_sinks.h>
 
