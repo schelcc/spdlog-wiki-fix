@@ -1,1 +1,1 @@
-This is a sidebar
+Above this text is a "Sidebar!"
