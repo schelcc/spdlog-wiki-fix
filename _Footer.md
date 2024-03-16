@@ -1,0 +1,1 @@
+©gabime 2023-2024 spdlog. All Rights Reserved.
