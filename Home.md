@@ -2,7 +2,7 @@
 
 Welcome to the documentation wiki! Here are links to all the documentation topics:
 
-- [Get Started Quickly](1.-Quick-Start)
+- [Quick Start](Quick-Start)
 - [Ensure Thread Safety](1.1.-Thread-Safety)
 - [How to Create Loggers](2.-Creating-Loggers)
 - [Learn About Custom Formatting](3.-Custom-Formatting)
