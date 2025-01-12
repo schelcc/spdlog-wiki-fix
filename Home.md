@@ -2,28 +2,24 @@
 
 Welcome to the documentation wiki! Below are links to all the available documentation pages:
 
-- [Quick Start](QuickStart)
+- [Quick Start](Quick-Start)
 - [Thread Safety](Thread-Safety)
-- [Creating Loggers](Creating-loggers)
-- [Custom Formatting](Custom-formatting)
+- [Creating Loggers](Creating-Loggers)
+- [Custom Formatting](Custom-Formatting)
 - [Sinks](Sinks)
-- [Logger Registry](Logger-registry)
-- [Asynchronous Logging](Asynchronous-logging)
-- [Flush Policy](Flush-policy)
+- [Logger Registry](Logger-Registry)
+- [Asynchronous Logging](Asynchronous-Logging)
+- [Flush Policy](Flush-Policy)
 - [Tweaking](Tweaking)
 - [CMake](CMake)
-- [Default Logger](Default-logger)
-- [Error Handling](Error-handling)
-- [How to Use Spdlog in DLLs](How-to-use-spdlog-in-DLLs)
+- [Default Logger](Default-Logger)
+- [Error Handling](Error-Handling)
+- [How to Use Spdlog in DLLs](How-to-Use-Spdlog-in-DLLs)
 - [Integrating into Eclipse IDE](Integrating-into-Eclipse-IDE)
-- [Language Bindings](Language-bindings)
+- [Language Bindings](Language-Bindings)
 - [Makefile Only](Makefile-Only)
-- [Note for Adding Sinks on the Fly](Note-for-adding-sinks-on-the-fly)
-- [Preventing Child Processes from Inheriting Open Log Files](Preventing-child-processes-from-inheriting-open-log-files)
-- [Preventing Undefined Thread IDs in Child Processes](Preventing-undefined-thread-ids-in-child-processes)
-- [Reference Documentation Using Doxygen](Reference-documentation-using-Doxygen)
-- [Setting Up JSON Logging with Spdlog](Setting-up-JSON-logging-with-spdlog)
-
-Please click on the links above to navigate to the respective topics.
-
-
+- [Note for Adding Sinks on the Fly](Note-for-Adding-Sinks-on-the-Fly)
+- [Preventing Child Processes from Inheriting Open Log Files](Preventing-Child-Processes-from-Inheriting-Open-Log-Files)
+- [Preventing Undefined Thread IDs in Child Processes](Preventing-Undefined-Thread-IDs-in-Child-Processes)
+- [Reference Documentation Using Doxygen](Reference-Documentation-Using-Doxygen)
+- [Setting Up JSON Logging with Spdlog](Setting-Up-JSON-Logging-with
