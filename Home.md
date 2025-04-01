@@ -2,7 +2,7 @@
 
 Welcome to the documentation wiki! Below are links to all the available documentation pages:
 
-- [QuickStart](1.-QuickStart)
+- [QuickStart](QuickStart)
 - [FAQ](FAQ)
 - [Thread Safety](Thread-Safety)
 - [Creating loggers](2.-Creating-loggers)
