@@ -9,7 +9,7 @@ Welcome to the documentation wiki! Below are links to all the available document
 - [Custom formatting](Custom-formatting)
 - [Sinks](Sinks)
 - [Logger registry](Logger-registry)
-- [Asynchronous logging](6.-Asynchronous-logging)
+- [Asynchronous logging](Asynchronous-logging)
 - [Flush policy](7.-Flush-policy)
 - [Tweaking](8.-Tweaking)
 - [CMake](9.-CMake)
