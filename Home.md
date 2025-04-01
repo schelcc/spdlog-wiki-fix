@@ -4,7 +4,7 @@ Welcome to the documentation wiki! Below are links to all the available document
 
 - [QuickStart](1.-QuickStart)
 - [FAQ](FAQ)
-- [Thread Safety](1.1.-Thread-Safety)
+- [Thread Safety](Thread-Safety)
 - [Creating loggers](2.-Creating-loggers)
 - [Custom formatting](3.-Custom-formatting)
 - [Sinks](4.-Sinks)
