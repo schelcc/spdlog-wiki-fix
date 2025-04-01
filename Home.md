@@ -8,7 +8,7 @@ Welcome to the documentation wiki! Below are links to all the available document
 - [Creating loggers](Creating-loggers)
 - [Custom formatting](Custom-formatting)
 - [Sinks](Sinks)
-- [Logger registry](5.-Logger-registry)
+- [Logger registry](Logger-registry)
 - [Asynchronous logging](6.-Asynchronous-logging)
 - [Flush policy](7.-Flush-policy)
 - [Tweaking](8.-Tweaking)
