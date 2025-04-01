@@ -5,7 +5,7 @@ Welcome to the documentation wiki! Below are links to all the available document
 - [QuickStart](QuickStart)
 - [FAQ](FAQ)
 - [Thread Safety](Thread-Safety)
-- [Creating loggers](2.-Creating-loggers)
+- [Creating loggers](Creating-loggers)
 - [Custom formatting](3.-Custom-formatting)
 - [Sinks](4.-Sinks)
 - [Logger registry](5.-Logger-registry)
