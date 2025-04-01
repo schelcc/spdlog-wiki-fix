@@ -7,7 +7,7 @@ Welcome to the documentation wiki! Below are links to all the available document
 - [Thread Safety](Thread-Safety)
 - [Creating loggers](Creating-loggers)
 - [Custom formatting](Custom-formatting)
-- [Sinks](4.-Sinks)
+- [Sinks](Sinks)
 - [Logger registry](5.-Logger-registry)
 - [Asynchronous logging](6.-Asynchronous-logging)
 - [Flush policy](7.-Flush-policy)
