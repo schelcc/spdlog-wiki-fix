@@ -7,8 +7,6 @@ int main()
 }
 ```
 
-spdlog is a header only library. Just copy the files under [include](https://github.com/gabime/spdlog/tree/master/include/spdlog) to your build tree and use a C++11 compiler.
-
 It provides a python like formatting API using the bundled [fmt](https://github.com/fmtlib/fmt) lib (see the [reference](https://fmt.dev/latest/syntax.html)): 
 ```c++
 logger->info("Hello {} {} !!", "param1", 123.4);
