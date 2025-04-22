@@ -23,9 +23,9 @@ or toolchains:
 > cmake -H. -B_builds -DCMAKE_TOOLCHAIN_FILE=/path/to/android.cmake -DCMAKE_BUILD_TYPE=Release
 ```
 
-To add examples use `SPDLOG_BUILD_EXAMPLES=ON` option:
+To add examples use `SPDLOG_BUILD_EXAMPLE=ON` option:
 ```cmake
-> cmake -H. -B_builds -DSPDLOG_BUILD_EXAMPLES=ON -DCMAKE_BUILD_TYPE=Release
+> cmake -H. -B_builds -DSPDLOG_BUILD_EXAMPLE=ON -DCMAKE_BUILD_TYPE=Release
 ```
 
 ### Build/test
