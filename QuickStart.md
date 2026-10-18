@@ -7,7 +7,7 @@ int main()
 }
 ```
 
-spdlog provides a python like formatting API using the bundled [fmt](https://github.com/fmtlib/fmt) lib (see the [reference](https://fmt.dev/latest/syntax.html)): 
+spdlog provides a python like formatting API using the bundled [fmt](https://github.com/fmtlib/fmt) lib (see the [reference](https://fmt.dev/latest/api)): 
 ```c++
 logger->info("Hello {} {} !!", "param1", 123.4);
 ```
